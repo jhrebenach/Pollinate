@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Pollinate</title>
+  <meta name="author" content="Wilfred Wallis">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/wilfredCSS.css">
+</head>
+<body>
+
+<div class="leftSide">
+  <div id="playGround" class="box">
+  </div>
+</div>
+
+<div class="rightSide">
+  <h2>Art Maker </h2>
+  <div class="centerAddText">
+    <input id="textInput" type="text">
+    <button onClick="start()">Add Text</button>
+  </div>
+  <hr>
+  <div class="controls">
+<p id="currentID">d</p>
+<p class="noMargin">Text Selected =</p> <input class="noMargin" id="textSelected" type="text">
+<button onClick="applyChanges()">Change Text</button>
+<button onClick="removeText()">Remove Text</button>
+
+
+<br>
+    <select id="colorOfText">
+    <option value="red">Red</option>
+    <option value="blue" selected="selected" >Blue</option>
+    <option value="green">Green</option>
+    <option value="pink">Pink</option>
+  </select><br>
+   <select id="styleOfText">
+    <option value="Copperplate, 'Copperplate Gothic Light', fantasy" selected="selected" >Copper</option>
+    <option value="Papyrus, fantasy"  >Papyrus</option><br>
+    <option value="'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace">Courier</option>
+    <option value="pink">Pink</option>
+  </select><br>
+
+  <select id="fontSize">
+    <option value="14px" selected="selected" >14</option>
+    <option value="18px"  >18</option><br>
+    <option value="24px">24</option>
+    <option value="30px">30</option>
+  </select><br>
+  <button onClick="changes()">apply changes </button><br>
+  <button onClick="savePicture()">save</button><br>
+ 
+  </div>
+</div>
+
+
+  
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
+ 
+
+ <script src="js/main.js"></script>
+
+</body>
+</html>

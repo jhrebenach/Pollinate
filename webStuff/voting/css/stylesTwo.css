@@ -1,0 +1,24 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #d3d3d3;
+	font-weight: none;
+	font-family: "Courier New", Courier, monospace;
+}
+.con {
+	margin-right: 100px;
+	margin-left: 100px;
+	background-color: #d3d3d3;
+}
+h1 {
+	text-align: center;
+}
+h2 {
+	font-weight: normal;
+}
+input {
+	margin-left: 20px;
+}
+#lestTab {
+	margin-left: 9px;
+}

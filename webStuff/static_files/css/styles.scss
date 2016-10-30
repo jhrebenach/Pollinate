@@ -1,0 +1,106 @@
+$mainColor: #C7E8E0;
+$yellowColor: #FFDB39;
+$distanceOfNavBarLines: 3px;
+$areaPictureTakesup: 60vh;
+$heightOfNavBar: 50px;
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: $mainColor; }
+
+
+.img-con {
+  background: url(../images/backGroundMain.jpg);
+  height: 60vh;
+  background-size: cover;
+  background-position: center center;
+}
+.barTop {
+  position: absolute;
+  height: 1vh;
+  width: 100%;
+  top: 73px;
+  background-color: $mainColor;
+}
+.barBottom {
+  position: absolute;
+  height: 1vh;
+  width: 100%;
+  top: calc(60vh + 50px);
+  background-color: $mainColor;
+}
+.logo {
+  background: url(../images/pollinateLogo.png) no-repeat left center;
+  height: 100%;
+
+}
+.mobile li  {
+     list-style-type: none;
+     padding-bottom: 10px;
+    
+}
+
+/*when the screen is small */
+@media screen and (min-width:680px) {
+  #buttonNav {
+    display: none;
+  }
+  nav {
+  position: relative;
+  min-height: $heightOfNavBar;
+  background-color: $mainColor;
+  padding-top: 15px;
+
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+  li {
+  display: inline;
+  float: right;
+  margin-right: 15px;
+  border-top: 3px solid $yellowColor;
+  border-bottom: 3px solid $yellowColor;
+  padding-top: $distanceOfNavBarLines;
+  padding-bottom: $distanceOfNavBarLines;
+   }
+}
+
+}
+@media screen and (max-width:680px) {
+
+  .container {
+    padding-left: 0;
+  }
+   .desktop li {
+    display: none;
+  }
+  .desktop {
+    padding-bottom: 20px;
+  }
+  .logo {
+    margin: auto;
+    width: 375px;
+  }
+   #buttonNav {
+    display: inline;
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    font-size: 20px;  }
+  
+  
+  .barTop {
+    display: none;
+  }
+  .barBottom{
+    display: none;
+  }
+}
+
+
+
+
+

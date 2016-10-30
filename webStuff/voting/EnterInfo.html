@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Pollinate</title>
+  <meta name="author" content="Wilfred Wallis">
+
+   <!-- CSS -->
+    <link rel="stylesheet" href="css/stylesTwo.css">
+</head>
+<body>
+	
+
+<h1>Polliante Surveys</h1>
+<hr>
+
+<div class="con">
+	<h2>Thank you for Agreeing To Be Part of This Survey! </h2>
+	<p>To start, Please senter some basic Information:</p>
+
+	<form action="putInfo.php" method="post">
+	  Please Input your Age:<br>
+	  <input type="number" name="quantity" min="0" max="100">
+	  <br>
+	  Please Check your Gender:<br>
+	  Male :
+	  <input type="radio" name="gender" value="0" checked>
+	  <br> 
+ 	Female:	<input id="lestTab" type="radio" name="gender" value="1"><br>
+ 		Other: <input id="" type="radio" name="gender" value="3"><br>
+      
+      Please Check your Ethnicity, you may skip this question.
+      <br>
+      <input type="radio" name="ethnicity" value="black"> Black<br>
+  	  <input type="radio" name="ethnicity" value="asian" checked="checked"> Asian<br>
+  	  <input type="radio" name="ethnicity" value="white" checked="checked">White<br>
+  	  <input type="radio" name="ethnicity" value="other" checked="checked">Other<br>
+
+	  <input type="submit" value="Submit">
+	</form>
+</div>
+	
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
