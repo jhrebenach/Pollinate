@@ -6,12 +6,22 @@
   <title>Pollinate</title>
   <meta name="author" content="Wilfred Wallis">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
    <!-- CSS -->
    <link rel="stylesheet" href="css/wilfredCSS.css">
     <link rel="stylesheet" href="css/styles.css">
     
 </head>
 <body>
+
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/submitData.js"></script>
+
   <div class="container">
   
   <nav>
@@ -28,31 +38,31 @@
   <hr>
 
   <h1> Survey Maker </h1>
-  <form>
+  
     <p>Enter your Organization's name:</p>
-    <input type="Text"><br>
+    <input type="Text" id="orgName"><br>
     <p> What would you like to be your survey name:</p>
-    <input type="Text"><br>
+    <input type="Text" id="surveyName"><br>
     <p><strong>Now enter your options:</strong> </p>
     Gender 
-    <input type="checkbox"><br>
+    <input type="checkbox" value="hello " id="gender"><br>
     Age 
-    <input type="checkbox"><br>
+    <input type="checkbox" id="age"><br>
     Ethnicity
-    <input type="checkbox"><br>
+    <input type="checkbox" id="ethnicity"><br>
     Inside or Outside the US
-    <input type="checkbox"> <br>
+    <input type="checkbox" id="insideOut"> <br>
     Major
-    <input type="checkbox"><br>
+    <input type="checkbox" id="major"><br>
     <p><strong>Enter other options you would like:</strong></p>
-    <textarea rows="5" cols="50">
-Gender: male, female, other
+    <textarea id="extra" rows="5" cols="50">
+Gender: male, female, other;
 
     </textarea>
     <br>
     <br>
-    <button type="submit">Submit</button>
-  </form>
+    <button onClick="takeDataIn()" type="submit">Submit</button>
+  
 
 
 </div>
